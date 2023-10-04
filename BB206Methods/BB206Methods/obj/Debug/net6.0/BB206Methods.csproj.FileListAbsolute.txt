@@ -1,0 +1,15 @@
+C:\Users\asus\Desktop\BB206Methods\BB206Methods\bin\Debug\net6.0\BB206Methods.exe
+C:\Users\asus\Desktop\BB206Methods\BB206Methods\bin\Debug\net6.0\BB206Methods.deps.json
+C:\Users\asus\Desktop\BB206Methods\BB206Methods\bin\Debug\net6.0\BB206Methods.runtimeconfig.json
+C:\Users\asus\Desktop\BB206Methods\BB206Methods\bin\Debug\net6.0\BB206Methods.dll
+C:\Users\asus\Desktop\BB206Methods\BB206Methods\bin\Debug\net6.0\BB206Methods.pdb
+C:\Users\asus\Desktop\BB206Methods\BB206Methods\obj\Debug\net6.0\BB206Methods.csproj.AssemblyReference.cache
+C:\Users\asus\Desktop\BB206Methods\BB206Methods\obj\Debug\net6.0\BB206Methods.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\Desktop\BB206Methods\BB206Methods\obj\Debug\net6.0\BB206Methods.AssemblyInfoInputs.cache
+C:\Users\asus\Desktop\BB206Methods\BB206Methods\obj\Debug\net6.0\BB206Methods.AssemblyInfo.cs
+C:\Users\asus\Desktop\BB206Methods\BB206Methods\obj\Debug\net6.0\BB206Methods.csproj.CoreCompileInputs.cache
+C:\Users\asus\Desktop\BB206Methods\BB206Methods\obj\Debug\net6.0\BB206Methods.dll
+C:\Users\asus\Desktop\BB206Methods\BB206Methods\obj\Debug\net6.0\refint\BB206Methods.dll
+C:\Users\asus\Desktop\BB206Methods\BB206Methods\obj\Debug\net6.0\BB206Methods.pdb
+C:\Users\asus\Desktop\BB206Methods\BB206Methods\obj\Debug\net6.0\BB206Methods.genruntimeconfig.cache
+C:\Users\asus\Desktop\BB206Methods\BB206Methods\obj\Debug\net6.0\ref\BB206Methods.dll
