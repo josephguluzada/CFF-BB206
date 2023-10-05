@@ -1,0 +1,15 @@
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\ValueReferenceTypesRefOut\ValueReferenceTypesRefOut\bin\Debug\net6.0\ValueReferenceTypesRefOut.exe
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\ValueReferenceTypesRefOut\ValueReferenceTypesRefOut\bin\Debug\net6.0\ValueReferenceTypesRefOut.deps.json
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\ValueReferenceTypesRefOut\ValueReferenceTypesRefOut\bin\Debug\net6.0\ValueReferenceTypesRefOut.runtimeconfig.json
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\ValueReferenceTypesRefOut\ValueReferenceTypesRefOut\bin\Debug\net6.0\ValueReferenceTypesRefOut.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\ValueReferenceTypesRefOut\ValueReferenceTypesRefOut\bin\Debug\net6.0\ValueReferenceTypesRefOut.pdb
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\ValueReferenceTypesRefOut\ValueReferenceTypesRefOut\obj\Debug\net6.0\ValueReferenceTypesRefOut.csproj.AssemblyReference.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\ValueReferenceTypesRefOut\ValueReferenceTypesRefOut\obj\Debug\net6.0\ValueReferenceTypesRefOut.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\ValueReferenceTypesRefOut\ValueReferenceTypesRefOut\obj\Debug\net6.0\ValueReferenceTypesRefOut.AssemblyInfoInputs.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\ValueReferenceTypesRefOut\ValueReferenceTypesRefOut\obj\Debug\net6.0\ValueReferenceTypesRefOut.AssemblyInfo.cs
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\ValueReferenceTypesRefOut\ValueReferenceTypesRefOut\obj\Debug\net6.0\ValueReferenceTypesRefOut.csproj.CoreCompileInputs.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\ValueReferenceTypesRefOut\ValueReferenceTypesRefOut\obj\Debug\net6.0\ValueReferenceTypesRefOut.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\ValueReferenceTypesRefOut\ValueReferenceTypesRefOut\obj\Debug\net6.0\refint\ValueReferenceTypesRefOut.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\ValueReferenceTypesRefOut\ValueReferenceTypesRefOut\obj\Debug\net6.0\ValueReferenceTypesRefOut.pdb
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\ValueReferenceTypesRefOut\ValueReferenceTypesRefOut\obj\Debug\net6.0\ValueReferenceTypesRefOut.genruntimeconfig.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\ValueReferenceTypesRefOut\ValueReferenceTypesRefOut\obj\Debug\net6.0\ref\ValueReferenceTypesRefOut.dll
