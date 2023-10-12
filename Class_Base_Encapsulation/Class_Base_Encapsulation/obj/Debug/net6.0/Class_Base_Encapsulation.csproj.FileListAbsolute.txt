@@ -1,0 +1,15 @@
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\Class_Base_Encapsulation\Class_Base_Encapsulation\bin\Debug\net6.0\Class_Base_Encapsulation.exe
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\Class_Base_Encapsulation\Class_Base_Encapsulation\bin\Debug\net6.0\Class_Base_Encapsulation.deps.json
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\Class_Base_Encapsulation\Class_Base_Encapsulation\bin\Debug\net6.0\Class_Base_Encapsulation.runtimeconfig.json
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\Class_Base_Encapsulation\Class_Base_Encapsulation\bin\Debug\net6.0\Class_Base_Encapsulation.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\Class_Base_Encapsulation\Class_Base_Encapsulation\bin\Debug\net6.0\Class_Base_Encapsulation.pdb
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\Class_Base_Encapsulation\Class_Base_Encapsulation\obj\Debug\net6.0\Class_Base_Encapsulation.csproj.AssemblyReference.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\Class_Base_Encapsulation\Class_Base_Encapsulation\obj\Debug\net6.0\Class_Base_Encapsulation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\Class_Base_Encapsulation\Class_Base_Encapsulation\obj\Debug\net6.0\Class_Base_Encapsulation.AssemblyInfoInputs.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\Class_Base_Encapsulation\Class_Base_Encapsulation\obj\Debug\net6.0\Class_Base_Encapsulation.AssemblyInfo.cs
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\Class_Base_Encapsulation\Class_Base_Encapsulation\obj\Debug\net6.0\Class_Base_Encapsulation.csproj.CoreCompileInputs.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\Class_Base_Encapsulation\Class_Base_Encapsulation\obj\Debug\net6.0\Class_Base_Encapsulation.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\Class_Base_Encapsulation\Class_Base_Encapsulation\obj\Debug\net6.0\refint\Class_Base_Encapsulation.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\Class_Base_Encapsulation\Class_Base_Encapsulation\obj\Debug\net6.0\Class_Base_Encapsulation.pdb
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\Class_Base_Encapsulation\Class_Base_Encapsulation\obj\Debug\net6.0\Class_Base_Encapsulation.genruntimeconfig.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\Class_Base_Encapsulation\Class_Base_Encapsulation\obj\Debug\net6.0\ref\Class_Base_Encapsulation.dll

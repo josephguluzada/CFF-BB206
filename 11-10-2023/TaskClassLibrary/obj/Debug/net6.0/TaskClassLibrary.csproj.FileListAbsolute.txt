@@ -1,0 +1,12 @@
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\11-10-2023\TaskClassLibrary\bin\Debug\net6.0\TaskClassLibrary.deps.json
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\11-10-2023\TaskClassLibrary\bin\Debug\net6.0\TaskClassLibrary.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\11-10-2023\TaskClassLibrary\bin\Debug\net6.0\TaskClassLibrary.pdb
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\11-10-2023\TaskClassLibrary\obj\Debug\net6.0\TaskClassLibrary.csproj.AssemblyReference.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\11-10-2023\TaskClassLibrary\obj\Debug\net6.0\TaskClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\11-10-2023\TaskClassLibrary\obj\Debug\net6.0\TaskClassLibrary.AssemblyInfoInputs.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\11-10-2023\TaskClassLibrary\obj\Debug\net6.0\TaskClassLibrary.AssemblyInfo.cs
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\11-10-2023\TaskClassLibrary\obj\Debug\net6.0\TaskClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\11-10-2023\TaskClassLibrary\obj\Debug\net6.0\TaskClassLibrary.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\11-10-2023\TaskClassLibrary\obj\Debug\net6.0\refint\TaskClassLibrary.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\11-10-2023\TaskClassLibrary\obj\Debug\net6.0\TaskClassLibrary.pdb
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\11-10-2023\TaskClassLibrary\obj\Debug\net6.0\ref\TaskClassLibrary.dll
