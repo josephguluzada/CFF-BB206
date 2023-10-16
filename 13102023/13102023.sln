@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13102023", "13102023\13102023.csproj", "{0904DBE8-86C4-444B-80C2-A8AA77926868}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Record", "Record\Record.csproj", "{8B7264F2-448F-430C-8905-5BC2ED9C9322}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuple", "Tuple\Tuple.csproj", "{D8FF5CDC-35BA-412D-8C99-8DF837B4EF61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0904DBE8-86C4-444B-80C2-A8AA77926868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0904DBE8-86C4-444B-80C2-A8AA77926868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0904DBE8-86C4-444B-80C2-A8AA77926868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0904DBE8-86C4-444B-80C2-A8AA77926868}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B7264F2-448F-430C-8905-5BC2ED9C9322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B7264F2-448F-430C-8905-5BC2ED9C9322}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B7264F2-448F-430C-8905-5BC2ED9C9322}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B7264F2-448F-430C-8905-5BC2ED9C9322}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8FF5CDC-35BA-412D-8C99-8DF837B4EF61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8FF5CDC-35BA-412D-8C99-8DF837B4EF61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8FF5CDC-35BA-412D-8C99-8DF837B4EF61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8FF5CDC-35BA-412D-8C99-8DF837B4EF61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD385AA7-61AC-4D36-BC28-581547E04CF3}
+	EndGlobalSection
+EndGlobal

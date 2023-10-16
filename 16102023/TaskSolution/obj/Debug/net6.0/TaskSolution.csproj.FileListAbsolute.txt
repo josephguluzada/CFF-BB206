@@ -1,0 +1,15 @@
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\16102023\TaskSolution\bin\Debug\net6.0\TaskSolution.exe
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\16102023\TaskSolution\bin\Debug\net6.0\TaskSolution.deps.json
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\16102023\TaskSolution\bin\Debug\net6.0\TaskSolution.runtimeconfig.json
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\16102023\TaskSolution\bin\Debug\net6.0\TaskSolution.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\16102023\TaskSolution\bin\Debug\net6.0\TaskSolution.pdb
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\16102023\TaskSolution\obj\Debug\net6.0\TaskSolution.csproj.AssemblyReference.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\16102023\TaskSolution\obj\Debug\net6.0\TaskSolution.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\16102023\TaskSolution\obj\Debug\net6.0\TaskSolution.AssemblyInfoInputs.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\16102023\TaskSolution\obj\Debug\net6.0\TaskSolution.AssemblyInfo.cs
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\16102023\TaskSolution\obj\Debug\net6.0\TaskSolution.csproj.CoreCompileInputs.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\16102023\TaskSolution\obj\Debug\net6.0\TaskSolution.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\16102023\TaskSolution\obj\Debug\net6.0\refint\TaskSolution.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\16102023\TaskSolution\obj\Debug\net6.0\TaskSolution.pdb
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\16102023\TaskSolution\obj\Debug\net6.0\TaskSolution.genruntimeconfig.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\16102023\TaskSolution\obj\Debug\net6.0\ref\TaskSolution.dll
