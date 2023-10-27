@@ -1,0 +1,15 @@
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\27102023\XMLBinarySerializationDeserialization\bin\Debug\net6.0\XMLBinarySerializationDeserialization.exe
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\27102023\XMLBinarySerializationDeserialization\bin\Debug\net6.0\XMLBinarySerializationDeserialization.deps.json
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\27102023\XMLBinarySerializationDeserialization\bin\Debug\net6.0\XMLBinarySerializationDeserialization.runtimeconfig.json
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\27102023\XMLBinarySerializationDeserialization\bin\Debug\net6.0\XMLBinarySerializationDeserialization.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\27102023\XMLBinarySerializationDeserialization\bin\Debug\net6.0\XMLBinarySerializationDeserialization.pdb
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\27102023\XMLBinarySerializationDeserialization\obj\Debug\net6.0\XMLBinarySerializationDeserialization.csproj.AssemblyReference.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\27102023\XMLBinarySerializationDeserialization\obj\Debug\net6.0\XMLBinarySerializationDeserialization.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\27102023\XMLBinarySerializationDeserialization\obj\Debug\net6.0\XMLBinarySerializationDeserialization.AssemblyInfoInputs.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\27102023\XMLBinarySerializationDeserialization\obj\Debug\net6.0\XMLBinarySerializationDeserialization.AssemblyInfo.cs
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\27102023\XMLBinarySerializationDeserialization\obj\Debug\net6.0\XMLBinarySerializationDeserialization.csproj.CoreCompileInputs.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\27102023\XMLBinarySerializationDeserialization\obj\Debug\net6.0\XMLBinarySerializationDeserialization.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\27102023\XMLBinarySerializationDeserialization\obj\Debug\net6.0\refint\XMLBinarySerializationDeserialization.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\27102023\XMLBinarySerializationDeserialization\obj\Debug\net6.0\XMLBinarySerializationDeserialization.pdb
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\27102023\XMLBinarySerializationDeserialization\obj\Debug\net6.0\XMLBinarySerializationDeserialization.genruntimeconfig.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\27102023\XMLBinarySerializationDeserialization\obj\Debug\net6.0\ref\XMLBinarySerializationDeserialization.dll

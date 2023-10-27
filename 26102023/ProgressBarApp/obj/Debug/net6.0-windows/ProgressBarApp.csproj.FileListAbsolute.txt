@@ -1,0 +1,17 @@
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\26102023\ProgressBarApp\bin\Debug\net6.0-windows\ProgressBarApp.exe
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\26102023\ProgressBarApp\bin\Debug\net6.0-windows\ProgressBarApp.deps.json
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\26102023\ProgressBarApp\bin\Debug\net6.0-windows\ProgressBarApp.runtimeconfig.json
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\26102023\ProgressBarApp\bin\Debug\net6.0-windows\ProgressBarApp.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\26102023\ProgressBarApp\bin\Debug\net6.0-windows\ProgressBarApp.pdb
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\26102023\ProgressBarApp\obj\Debug\net6.0-windows\ProgressBarApp.csproj.AssemblyReference.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\26102023\ProgressBarApp\obj\Debug\net6.0-windows\ProgressBarApp.Form1.resources
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\26102023\ProgressBarApp\obj\Debug\net6.0-windows\ProgressBarApp.csproj.GenerateResource.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\26102023\ProgressBarApp\obj\Debug\net6.0-windows\ProgressBarApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\26102023\ProgressBarApp\obj\Debug\net6.0-windows\ProgressBarApp.AssemblyInfoInputs.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\26102023\ProgressBarApp\obj\Debug\net6.0-windows\ProgressBarApp.AssemblyInfo.cs
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\26102023\ProgressBarApp\obj\Debug\net6.0-windows\ProgressBarApp.csproj.CoreCompileInputs.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\26102023\ProgressBarApp\obj\Debug\net6.0-windows\ProgressBarApp.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\26102023\ProgressBarApp\obj\Debug\net6.0-windows\refint\ProgressBarApp.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\26102023\ProgressBarApp\obj\Debug\net6.0-windows\ProgressBarApp.pdb
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\26102023\ProgressBarApp\obj\Debug\net6.0-windows\ProgressBarApp.genruntimeconfig.cache
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\26102023\ProgressBarApp\obj\Debug\net6.0-windows\ref\ProgressBarApp.dll
