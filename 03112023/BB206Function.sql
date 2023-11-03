@@ -1,0 +1,115 @@
+CREATE DATABASE BB206Lesson
+
+USE BB206Lesson
+
+CREATE TABLE Groups
+(
+	Id INT IDENTITY PRIMARY KEY,
+	Name NVARCHAR(50) UNIQUE
+)
+
+CREATE TABLE Students
+(
+	Id INT IDENTITY PRIMARY KEY,
+	Fullname NVARCHAR(70),
+	[Grant] DECIMAL(18,2),
+	GroupId INT FOREIGN KEY REFERENCES Groups(Id)
+)
+
+CREATE TABLE DeletedStudents
+(
+	Id INT IDENTITY PRIMARY KEY,
+	Fullname NVARCHAR(70),
+	GroupId INT
+)
+
+ALTER TABLE Students
+ADD IsDeleted bit
+
+UPDATE Students
+SET IsDeleted = 0
+WHERE IsDeleted IS NULL
+
+CREATE VIEW VW_GET_GROUPS
+AS
+SELECT * FROM Groups
+
+CREATE VIEW VW_GET_Students
+AS
+SELECT * FROM Students
+
+SELECT * FROM VW_GET_GROUPS
+SELECT * FROM VW_GET_Students
+
+ALTER PROCEDURE USP_GET_STUDENT_BY_GRANT @minGrant DECIMAL(18,2),@maxGrant DECIMAL(18,2)= 1000
+AS
+SELECT S.Id, S.Fullname, S.[Grant] , G.Name FROM Students AS S
+JOIN Groups AS G
+ON G.Id = S.GroupId
+WHERE S.[Grant] BETWEEN @minGrant AND @maxGrant
+
+EXEC USP_GET_STUDENT_BY_GRANT 98, 189
+
+CREATE TRIGGER TRGR_GET_STUDENTS_AFTER_INSERT
+ON Students
+AFTER INSERT
+AS
+SELECT * FROM Students
+
+INSERT INTO Students
+VALUES
+('Enver3 Zohrabov3',55,1, 0)
+
+
+--CREATE TRIGGER TRGR_CHANGE_ISDELETED
+--ON Students
+--INSTEAD OF DELETE
+--AS
+--UPDATE Students
+--SET IsDeleted = 1
+
+
+ALTER TRIGGER TRGR_COPY_DELETED_STUDENTS
+ON Students
+INSTEAD OF DELETE
+AS
+SELECT * FROM Students
+
+SELECT * FROM deleted
+
+DELETE FROM Students
+Where GroupId = 1
+
+CREATE FUNCTION GetStudentsByGroupId(@id INT)
+RETURNS TABLE
+AS
+RETURN
+	SELECT * FROM Students
+	WHERE GroupId = @id
+
+SELECT Fullname, GroupId FROM dbo.GetStudentsByGroupId(2)
+
+CREATE FUNCTION GetFullName(@firstName NVARCHAR(20), @lastName NVARCHAR(25))
+RETURNS NVARCHAR(45)
+AS
+BEGIN
+	RETURN @firstName + ' ' + @lastName
+END
+
+
+SELECT dbo.GetFullName('Enver','Zohrabov')
+
+INSERT INTO Students
+VALUES
+(dbo.GetFullName('Enver','Zohrabov'),999,1,0)
+
+ALTER FUNCTION GetPOW(@number INT)
+RETURNS INT
+AS
+BEGIN
+	DECLARE @num INT
+	SET @num = @number * @number
+	RETURN @num
+END
+
+SELECT dbo.GetPOW(5)
