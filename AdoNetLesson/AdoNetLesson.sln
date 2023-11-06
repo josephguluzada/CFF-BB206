@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoNetLesson", "AdoNetLesson\AdoNetLesson.csproj", "{B61B4FCB-4B7C-4192-BBE0-1BB65BF541AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoNetClasswork", "AdoNetClasswork\AdoNetClasswork.csproj", "{FCD301FB-A965-479B-947A-CCE094737BAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B61B4FCB-4B7C-4192-BBE0-1BB65BF541AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B61B4FCB-4B7C-4192-BBE0-1BB65BF541AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B61B4FCB-4B7C-4192-BBE0-1BB65BF541AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B61B4FCB-4B7C-4192-BBE0-1BB65BF541AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCD301FB-A965-479B-947A-CCE094737BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCD301FB-A965-479B-947A-CCE094737BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCD301FB-A965-479B-947A-CCE094737BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCD301FB-A965-479B-947A-CCE094737BAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC59964B-7BCB-4C1F-8316-7A5DE3A4CDFB}
+	EndGlobalSection
+EndGlobal
