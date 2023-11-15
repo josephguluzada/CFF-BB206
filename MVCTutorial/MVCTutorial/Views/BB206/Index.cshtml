@@ -1,0 +1,19 @@
+﻿@{
+    List<string> names = new List<string> { "Elis", "Rowka", "Qudret", "Mezi" };
+}
+
+@*<ul>
+    <li>Elsever</li>
+    <li>Ulker</li>
+    <li>Tanzila</li>
+    <li>Ramzes (Optimal)</li>
+    <li>Magomed</li>
+    <li>Niyaz</li>
+</ul>*@
+
+<ul>
+    @for (int i = 0; i < names.Count; i++)
+    {
+        <li style="color:red; list-style:none">@names[i]</li>
+    }
+</ul>

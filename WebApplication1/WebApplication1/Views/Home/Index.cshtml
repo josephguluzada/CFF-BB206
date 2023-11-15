@@ -1,0 +1,8 @@
+﻿@model int;
+@{
+    int number = (int)@ViewData["number"];
+    int number1 = @ViewBag.Number1;
+    string name = (string)@TempData["name"];
+}
+
+<h1>Welcome to Index page: @Model ViewData: @number ViewBag: @number1 Tempdata: @name </h1>
