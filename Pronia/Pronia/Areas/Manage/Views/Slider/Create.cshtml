@@ -1,0 +1,39 @@
+﻿@model Slider
+
+<form method="post" enctype="multipart/form-data">
+   <div class="container-fluid">
+        <div class="row">
+            <div class="mb-3 col-md-3">
+                <label asp-for="Title1" class="form-label">Title 1</label>
+                <input asp-for="Title1" class="form-control" placeholder="Title1">
+                <span asp-validation-for="Title1"></span>
+            </div>
+            <div class="mb-3 col-md-3">
+                <label asp-for="Title2" class="form-label">Title 2 </label>
+                <input asp-for="Title2" class="form-control" placeholder="Title2">
+                <span asp-validation-for="Title2"></span>
+            </div>
+            <div class="mb-3 col-md-3">
+                <label asp-for="Desc" class="form-label">Desc</label>
+                <input asp-for="Desc" class="form-control" placeholder="Desc">
+                <span asp-validation-for="Desc"></span>
+            </div>
+            <div class="mb-3 col-md-3">
+                <label asp-for="RedirectUrl" class="form-label">RedirectUrl </label>
+                <input asp-for="RedirectUrl" class="form-control" placeholder="RedirectUrl">
+                <span asp-validation-for="RedirectUrl"></span>
+            </div>
+            <div class="mb-3 col-md-3">
+                <label asp-for="ButtonText" class="form-label">ButtonText </label>
+                <input asp-for="ButtonText" class="form-control" placeholder="ButtonText">
+                <span asp-validation-for="ButtonText"></span>
+            </div>
+            <div class="mb-3 col-md-3">
+                <label asp-for="ImageFile" class="form-label">ImageFile </label>
+                <input asp-for="ImageFile" class="form-control" placeholder="ImageFile">
+                <span asp-validation-for="ImageFile"></span>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+   </div>
+</form>
