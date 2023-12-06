@@ -18,7 +18,10 @@ builder.Services.AddScoped<IBookService, BookService>();
 builder.Services.AddScoped<ITagRepository, TagRepository>();
 builder.Services.AddScoped<IBookTagsRepository, BookTagRepository>();
 builder.Services.AddScoped<IBookImagesRepository, BookImagesRepository>();
-
+builder.Services.AddSession(opt =>
+{
+    opt.IdleTimeout = TimeSpan.FromMinutes(20);
+});
 builder.Services.AddDbContext<PustokContext>(opt =>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
@@ -38,7 +41,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseSession();
 app.UseAuthorization();
 
 app.MapControllerRoute(

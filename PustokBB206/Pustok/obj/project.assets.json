@@ -10795,11 +10795,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\asus\\Desktop\\PustokBB206\\Pustok\\Pustok.csproj",
+      "projectUniqueName": "C:\\Users\\asus\\Desktop\\Cff-BB206-Lessons\\CFF-BB206\\PustokBB206\\Pustok\\Pustok.csproj",
       "projectName": "Pustok",
-      "projectPath": "C:\\Users\\asus\\Desktop\\PustokBB206\\Pustok\\Pustok.csproj",
+      "projectPath": "C:\\Users\\asus\\Desktop\\Cff-BB206-Lessons\\CFF-BB206\\PustokBB206\\Pustok\\Pustok.csproj",
       "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\asus\\Desktop\\PustokBB206\\Pustok\\obj\\",
+      "outputPath": "C:\\Users\\asus\\Desktop\\Cff-BB206-Lessons\\CFF-BB206\\PustokBB206\\Pustok\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10817,8 +10817,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\asus\\Desktop\\PustokBB206\\Pustok.Business\\Pustok.Business.csproj": {
-              "projectPath": "C:\\Users\\asus\\Desktop\\PustokBB206\\Pustok.Business\\Pustok.Business.csproj"
+            "C:\\Users\\asus\\Desktop\\Cff-BB206-Lessons\\CFF-BB206\\PustokBB206\\Pustok.Business\\Pustok.Business.csproj": {
+              "projectPath": "C:\\Users\\asus\\Desktop\\Cff-BB206-Lessons\\CFF-BB206\\PustokBB206\\Pustok.Business\\Pustok.Business.csproj"
             }
           }
         }
