@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Pustok.Business.Services.Interfaces;
+using Pustok.Models;
 using Pustok.Repositories.Interfaces;
 using Pustok.ViewModels;
 
@@ -11,13 +12,33 @@ public class ProductController : Controller
     private readonly IBookService _bookService;
     private readonly IBookRepository _bookRepository;
 
-    public ProductController(IBookRepository bookRepository)
+    public ProductController(IBookRepository bookRepository, IBookService bookService)
     {
         _bookRepository = bookRepository;
+        _bookService = bookService;
     }
     public IActionResult Index()
     {
         return View();
+    }
+
+    public async Task<IActionResult> Detail(int id)
+    {
+        Book book = await _bookService.GetByIdAsync(id);
+        ProductDetailViewModel productDetailViewModel = new ProductDetailViewModel()
+        {
+            Book = book,
+            RelatedBooks = await _bookService.GetAllRelatedBooksAsync(book)
+        };
+
+        return View(productDetailViewModel);
+    }
+
+    public async Task<IActionResult> GetBookModal(int id)
+    {
+        var book = await _bookService.GetByIdAsync(id);
+
+        return PartialView("_BookModalPartial",book);
     }
 
     //public IActionResult SetSession(string name)
@@ -78,18 +99,18 @@ public class ProductController : Controller
     {
 
         if (!_bookRepository.Table.Any(x => x.Id == bookId)) return NotFound(); // 404
-        
+
         List<BasketItemViewModel> basketItemList = new List<BasketItemViewModel>();
         BasketItemViewModel basketItem = null;
         string basketItemListStr = HttpContext.Request.Cookies["BasketItems"];
 
-        if(basketItemListStr != null)
+        if (basketItemListStr != null)
         {
             basketItemList = JsonConvert.DeserializeObject<List<BasketItemViewModel>>(basketItemListStr);
 
-            basketItem = basketItemList.FirstOrDefault(x=>x.BookId == bookId);
+            basketItem = basketItemList.FirstOrDefault(x => x.BookId == bookId);
 
-            if(basketItem != null)
+            if (basketItem != null)
             {
                 basketItem.Count++;
             }
@@ -128,7 +149,7 @@ public class ProductController : Controller
 
         string basketItemListStr = HttpContext.Request.Cookies["BasketItems"];
 
-        if(basketItemListStr != null)
+        if (basketItemListStr != null)
         {
             basketItemList = JsonConvert.DeserializeObject<List<BasketItemViewModel>>(basketItemListStr);
         }
@@ -143,7 +164,7 @@ public class ProductController : Controller
         CheckoutViewModel checkoutItem = null;
 
         string basketItemListStr = HttpContext.Request.Cookies["BasketItems"];
-        if(basketItemListStr != null)
+        if (basketItemListStr != null)
         {
             basketItemList = JsonConvert.DeserializeObject<List<BasketItemViewModel>>(basketItemListStr);
 

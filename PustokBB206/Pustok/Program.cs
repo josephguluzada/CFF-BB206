@@ -4,6 +4,7 @@ using Pustok.Data.Repositories.Implementations;
 using Pustok.Repositories.Interfaces;
 using Pustok.Business.Services.Implementations;
 using Pustok.Business.Services.Interfaces;
+using Pustok.ViewServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,12 +13,13 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IGenreRepository, GenreRepository>();
 builder.Services.AddScoped<IAuthorRepository, AuthorRepository>();
 builder.Services.AddScoped<IBookRepository, BookRepository>();
-builder.Services.AddScoped<IGenreService, GenreService>();
-builder.Services.AddScoped<IAuhtorService, AuhtorService>();
-builder.Services.AddScoped<IBookService, BookService>();
 builder.Services.AddScoped<ITagRepository, TagRepository>();
 builder.Services.AddScoped<IBookTagsRepository, BookTagRepository>();
 builder.Services.AddScoped<IBookImagesRepository, BookImagesRepository>();
+builder.Services.AddScoped<IGenreService, GenreService>();
+builder.Services.AddScoped<IAuhtorService, AuhtorService>();
+builder.Services.AddScoped<IBookService, BookService>();
+builder.Services.AddScoped<LayoutService>();
 builder.Services.AddSession(opt =>
 {
     opt.IdleTimeout = TimeSpan.FromMinutes(20);

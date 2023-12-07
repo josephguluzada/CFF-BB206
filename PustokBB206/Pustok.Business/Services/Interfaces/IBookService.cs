@@ -9,6 +9,7 @@ namespace Pustok.Business.Services.Interfaces
         Task Delete(int id);
         Task<Book> GetByIdAsync(int id);
         Task<List<Book>> GetAllAsync();
+        Task<List<Book>> GetAllRelatedBooksAsync(Book book);
         Task UpdateAsync(Book entity);
     }
 }

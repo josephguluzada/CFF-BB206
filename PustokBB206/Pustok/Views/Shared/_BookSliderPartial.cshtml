@@ -22,7 +22,7 @@
                         @book.Author.FullName
                     </a>
                     <h3>
-                        <a href="product-details.html">
+                        <a asp-action="detail" asp-controller="product" asp-route-id="@book.Id">
                             @book.Name
                         </a>
                     </h3>
@@ -44,9 +44,9 @@
                                 <a href="compare.html" class="single-btn">
                                     <i class="fas fa-random"></i>
                                 </a>
-                                <a href="#" data-toggle="modal" data-target="#quickModal"
-                                   class="single-btn">
-                                    <i class="fas fa-eye"></i>
+                                <a asp-controller="product" asp-action="GetBookModal" asp-route-id="@book.Id" data-toggle="modal" data-target="#quickModal"
+                                   class="single-btn quick-modal-btn-shahin">
+                                    <i class="fas fa-eye "></i>
                                 </a>
                             </div>
                         </div>

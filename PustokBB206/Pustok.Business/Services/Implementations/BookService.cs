@@ -167,9 +167,14 @@ namespace Pustok.Business.Services.Implementations
             return await _bookRepository.GetAllAsync(x => x.IsDeleted == false, "BookImages", "Author");
         }
 
+        public async Task<List<Book>> GetAllRelatedBooksAsync(Book book)
+        {
+            return await _bookRepository.GetAllAsync(x => x.GenreId == book.GenreId && !x.IsDeleted && x.Id != book.Id, "Author", "BookImages");
+        }
+
         public async Task<Book> GetByIdAsync(int id)
         {
-            var entity = await _bookRepository.GetByIdAsync(x => x.Id == id && x.IsDeleted == false, "Author", "BookImages", "BookTags.Tag");
+            var entity = await _bookRepository.GetByIdAsync(x => x.Id == id && x.IsDeleted == false, "Author", "BookImages", "BookTags.Tag", "Genre");
 
             if (entity is null) throw new NullReferenceException();
 
