@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "u0bv4i5bOBJtjTLW3/UZpYxZIEeuaXqM2o/Li/nZOjI=",
+  "Hash": "DrVlSGD8vaNKCY3cmKWD74a/Yi5BJzAyzLR6b7sSGPg=",
   "Source": "Pustok",
   "BasePath": "_content/Pustok",
   "Mode": "Default",
@@ -1800,6 +1800,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\js\\plugins.js"
+    },
+    {
+      "Identity": "C:\\Users\\asus\\Desktop\\Cff-BB206-Lessons\\CFF-BB206\\PustokBB206\\Pustok\\wwwroot\\login\\login.css",
+      "SourceId": "Pustok",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asus\\Desktop\\Cff-BB206-Lessons\\CFF-BB206\\PustokBB206\\Pustok\\wwwroot\\",
+      "BasePath": "_content/Pustok",
+      "RelativePath": "login/login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\login\\login.css"
     },
     {
       "Identity": "C:\\Users\\asus\\Desktop\\Cff-BB206-Lessons\\CFF-BB206\\PustokBB206\\Pustok\\wwwroot\\manage\\css\\sb-admin-2.css",

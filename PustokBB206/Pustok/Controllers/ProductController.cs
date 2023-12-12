@@ -1,6 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using Pustok.Business.Services.Interfaces;
+using Pustok.Core.Models;
+using Pustok.DAL;
 using Pustok.Models;
 using Pustok.Repositories.Interfaces;
 using Pustok.ViewModels;
@@ -10,13 +14,21 @@ namespace Pustok.Controllers;
 public class ProductController : Controller
 {
     private readonly IBookService _bookService;
-    private readonly IBookRepository _bookRepository;
+	private readonly UserManager<AppUser> _userManager;
+	private readonly PustokContext _context;
+	private readonly IBookRepository _bookRepository;
 
-    public ProductController(IBookRepository bookRepository, IBookService bookService)
+    public ProductController(
+                        IBookRepository bookRepository, 
+                        IBookService bookService,
+                        UserManager<AppUser> userManager,
+                        PustokContext context)
     {
         _bookRepository = bookRepository;
         _bookService = bookService;
-    }
+		_userManager = userManager;
+		_context = context;
+	}
     public IActionResult Index()
     {
         return View();
@@ -95,50 +107,81 @@ public class ProductController : Controller
     //}
 
 
-    public IActionResult AddToBasket(int bookId)
+    public async Task<IActionResult> AddToBasket(int bookId)
     {
 
         if (!_bookRepository.Table.Any(x => x.Id == bookId)) return NotFound(); // 404
 
         List<BasketItemViewModel> basketItemList = new List<BasketItemViewModel>();
         BasketItemViewModel basketItem = null;
-        string basketItemListStr = HttpContext.Request.Cookies["BasketItems"];
+        BasketItem userBasketItem = null;
+        AppUser user = null;
 
-        if (basketItemListStr != null)
+        if (HttpContext.User.Identity.IsAuthenticated)
         {
-            basketItemList = JsonConvert.DeserializeObject<List<BasketItemViewModel>>(basketItemListStr);
+            user = await _userManager.FindByNameAsync(HttpContext.User.Identity.Name);
+        }
 
-            basketItem = basketItemList.FirstOrDefault(x => x.BookId == bookId);
+        if (user == null)
+        {
+			string basketItemListStr = HttpContext.Request.Cookies["BasketItems"];
 
-            if (basketItem != null)
+			if (basketItemListStr != null)
+			{
+				basketItemList = JsonConvert.DeserializeObject<List<BasketItemViewModel>>(basketItemListStr);
+
+				basketItem = basketItemList.FirstOrDefault(x => x.BookId == bookId);
+
+				if (basketItem != null)
+				{
+					basketItem.Count++;
+				}
+				else
+				{
+					basketItem = new BasketItemViewModel()
+					{
+						BookId = bookId,
+						Count = 1
+					};
+
+					basketItemList.Add(basketItem);
+				}
+			}
+			else
+			{
+				basketItem = new BasketItemViewModel()
+				{
+					BookId = bookId,
+					Count = 1
+				};
+
+				basketItemList.Add(basketItem);
+			}
+
+			basketItemListStr = JsonConvert.SerializeObject(basketItemList);
+
+			HttpContext.Response.Cookies.Append("BasketItems", basketItemListStr);
+		}
+        else
+        {
+            userBasketItem = await _context.BasketItems.FirstOrDefaultAsync(x => x.BookId == bookId && x.AppUserId == user.Id);
+            if (userBasketItem != null)
             {
-                basketItem.Count++;
+                userBasketItem.Count++;
             }
             else
             {
-                basketItem = new BasketItemViewModel()
+                userBasketItem = new BasketItem
                 {
                     BookId = bookId,
-                    Count = 1
+                    Count = 1,
+                    AppUserId = user.Id,
+                    IsDeleted = false
                 };
-
-                basketItemList.Add(basketItem);
+                _context.BasketItems.Add(userBasketItem);
             }
+            await _context.SaveChangesAsync();
         }
-        else
-        {
-            basketItem = new BasketItemViewModel()
-            {
-                BookId = bookId,
-                Count = 1
-            };
-
-            basketItemList.Add(basketItem);
-        }
-
-        basketItemListStr = JsonConvert.SerializeObject(basketItemList);
-
-        HttpContext.Response.Cookies.Append("BasketItems", basketItemListStr);
 
         return Ok(); //200
     }
@@ -161,18 +204,43 @@ public class ProductController : Controller
     {
         List<CheckoutViewModel> checkoutItemList = new List<CheckoutViewModel>();
         List<BasketItemViewModel> basketItemList = new List<BasketItemViewModel>();
+        List<BasketItem> userBasketItems = new List<BasketItem>();
         CheckoutViewModel checkoutItem = null;
+		AppUser user = null;
 
-        string basketItemListStr = HttpContext.Request.Cookies["BasketItems"];
-        if (basketItemListStr != null)
+		if (HttpContext.User.Identity.IsAuthenticated)
+		{
+			user = await _userManager.FindByNameAsync(HttpContext.User.Identity.Name);
+		}
+
+
+		if(user == null)
         {
-            basketItemList = JsonConvert.DeserializeObject<List<BasketItemViewModel>>(basketItemListStr);
+			string basketItemListStr = HttpContext.Request.Cookies["BasketItems"];
+			if (basketItemListStr != null)
+			{
+				basketItemList = JsonConvert.DeserializeObject<List<BasketItemViewModel>>(basketItemListStr);
 
-            foreach (var item in basketItemList)
+				foreach (var item in basketItemList)
+				{
+					checkoutItem = new CheckoutViewModel
+					{
+						Book = await _bookRepository.GetByIdAsync(x => x.Id == item.BookId),
+						Count = item.Count
+					};
+					checkoutItemList.Add(checkoutItem);
+				}
+			}
+        }
+        else
+        {
+            userBasketItems = await _context.BasketItems.Include(x=>x.Book).Where(x=> x.AppUserId == user.Id).ToListAsync();
+
+            foreach (var item in userBasketItems)
             {
                 checkoutItem = new CheckoutViewModel
                 {
-                    Book = await _bookRepository.GetByIdAsync(x => x.Id == item.BookId),
+                    Book = item.Book,
                     Count = item.Count
                 };
                 checkoutItemList.Add(checkoutItem);
@@ -180,6 +248,13 @@ public class ProductController : Controller
         }
 
         return View(checkoutItemList);
+    }
+
+    public async Task<IActionResult> SearchBooks(string value)
+    {
+        List<Book> searchedBooks = await _bookService.GetAllAsync(x=>x.Name.ToLower().Contains(value.Trim().ToLower()));
+
+        return Ok(searchedBooks);
     }
 
 }

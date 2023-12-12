@@ -1006,3 +1006,8 @@ C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\PustokBB206\Pustok\obj\Debug\n
 C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\PustokBB206\Pustok\obj\Debug\net6.0\Pustok.pdb
 C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\PustokBB206\Pustok\obj\Debug\net6.0\Pustok.genruntimeconfig.cache
 C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\PustokBB206\Pustok\obj\Debug\net6.0\ref\Pustok.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\PustokBB206\Pustok\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\PustokBB206\Pustok\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\PustokBB206\Pustok\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\PustokBB206\Pustok\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\asus\Desktop\Cff-BB206-Lessons\CFF-BB206\PustokBB206\Pustok\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

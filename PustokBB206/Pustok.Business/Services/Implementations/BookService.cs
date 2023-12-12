@@ -4,7 +4,7 @@ using Pustok.Business.Extensions;
 using Pustok.Models;
 using Pustok.Repositories.Interfaces;
 using Pustok.Business.Services.Interfaces;
-
+using System.Linq.Expressions;
 
 namespace Pustok.Business.Services.Implementations
 {
@@ -162,9 +162,9 @@ namespace Pustok.Business.Services.Implementations
 
 
 
-        public async Task<List<Book>> GetAllAsync()
+        public async Task<List<Book>> GetAllAsync(Expression<Func<Book, bool>>? expression = null)
         {
-            return await _bookRepository.GetAllAsync(x => x.IsDeleted == false, "BookImages", "Author");
+            return await _bookRepository.GetAllAsync(expression, "BookImages", "Author");
         }
 
         public async Task<List<Book>> GetAllRelatedBooksAsync(Book book)

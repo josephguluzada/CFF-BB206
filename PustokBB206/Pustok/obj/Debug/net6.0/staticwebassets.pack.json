@@ -417,6 +417,10 @@
       "PackagePath": "staticwebassets\\assets\\js\\plugins.js"
     },
     {
+      "Id": "C:\\Users\\asus\\Desktop\\Cff-BB206-Lessons\\CFF-BB206\\PustokBB206\\Pustok\\wwwroot\\login\\login.css",
+      "PackagePath": "staticwebassets\\login\\login.css"
+    },
+    {
       "Id": "C:\\Users\\asus\\Desktop\\Cff-BB206-Lessons\\CFF-BB206\\PustokBB206\\Pustok\\wwwroot\\manage\\css\\sb-admin-2.css",
       "PackagePath": "staticwebassets\\manage\\css\\sb-admin-2.css"
     },
