@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\asus\\Desktop\\Pustoknew\\PBB206\\Pustok.Core\\Pustok.Core.csproj": {}
+    "C:\\Users\\asus\\Desktop\\Cff-BB206-Lessons\\CFF-BB206\\PBB206PustokNew\\Pustok.Core\\Pustok.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\asus\\Desktop\\Pustoknew\\PBB206\\Pustok.Core\\Pustok.Core.csproj": {
+    "C:\\Users\\asus\\Desktop\\Cff-BB206-Lessons\\CFF-BB206\\PBB206PustokNew\\Pustok.Core\\Pustok.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\asus\\Desktop\\Pustoknew\\PBB206\\Pustok.Core\\Pustok.Core.csproj",
+        "projectUniqueName": "C:\\Users\\asus\\Desktop\\Cff-BB206-Lessons\\CFF-BB206\\PBB206PustokNew\\Pustok.Core\\Pustok.Core.csproj",
         "projectName": "Pustok.Core",
-        "projectPath": "C:\\Users\\asus\\Desktop\\Pustoknew\\PBB206\\Pustok.Core\\Pustok.Core.csproj",
+        "projectPath": "C:\\Users\\asus\\Desktop\\Cff-BB206-Lessons\\CFF-BB206\\PBB206PustokNew\\Pustok.Core\\Pustok.Core.csproj",
         "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\asus\\Desktop\\Pustoknew\\PBB206\\Pustok.Core\\obj\\",
+        "outputPath": "C:\\Users\\asus\\Desktop\\Cff-BB206-Lessons\\CFF-BB206\\PBB206PustokNew\\Pustok.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",

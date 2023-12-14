@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BW+/FHx/9KmLMbwhZOvDEL2uFlsMLIVVloH4cHHEZVff7B2ZrPo2dOubEL27sPVk4K/H48qQMYSAcjYXuru3pQ==",
+  "dgSpecHash": "KpYq4buhHqsJYlRzd4ahJqC2oRCrQrLOg+A31Bji9LkD8iP4TyFgMpAG070LK/6f2GbiOIy3ACT5YoWXQNorig==",
   "success": true,
-  "projectFilePath": "C:\\Users\\asus\\Desktop\\Pustoknew\\PBB206\\Pustok.Core\\Pustok.Core.csproj",
+  "projectFilePath": "C:\\Users\\asus\\Desktop\\Cff-BB206-Lessons\\CFF-BB206\\PBB206PustokNew\\Pustok.Core\\Pustok.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\asus\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\asus\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
