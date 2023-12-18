@@ -10,20 +10,20 @@ namespace Pustok.Controllers
 {
     public class AccountController : Controller
     {
-		private readonly UserManager<AppUser> _userManager;
-		private readonly RoleManager<IdentityRole> _roleManager;
-		private readonly SignInManager<AppUser> _signInManager;
+        private readonly UserManager<AppUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly SignInManager<AppUser> _signInManager;
         private readonly PustokContext _pustokContext;
 
         public AccountController(
-                            UserManager<AppUser> userManager, 
-                            RoleManager<IdentityRole> roleManager, 
+                            UserManager<AppUser> userManager,
+                            RoleManager<IdentityRole> roleManager,
                             SignInManager<AppUser> signInManager,
                             PustokContext pustokContext)
         {
-			_userManager = userManager;
-			_roleManager = roleManager;
-			_signInManager = signInManager;
+            _userManager = userManager;
+            _roleManager = roleManager;
+            _signInManager = signInManager;
             _pustokContext = pustokContext;
         }
 
@@ -39,18 +39,18 @@ namespace Pustok.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(MemberLoginViewModel memberLoginVM)
         {
-            if(!ModelState.IsValid) return View();
+            if (!ModelState.IsValid) return View();
             AppUser user = null;
 
             user = await _userManager.FindByNameAsync(memberLoginVM.Username);
 
-            if(user == null)
+            if (user == null)
             {
                 ModelState.AddModelError("", "Invalid username or password");
                 return View();
             }
 
-            var result =  await _signInManager.PasswordSignInAsync(user, memberLoginVM.Password, false, false);
+            var result = await _signInManager.PasswordSignInAsync(user, memberLoginVM.Password, false, false);
 
             if (!result.Succeeded)
             {
@@ -70,12 +70,12 @@ namespace Pustok.Controllers
         [HttpPost]
         public async Task<IActionResult> Register(MemberRegisterViewModel memberRegisterVM)
         {
-            if(!ModelState.IsValid) return View();
+            if (!ModelState.IsValid) return View();
             AppUser user = null;
 
             user = await _userManager.FindByNameAsync(memberRegisterVM.Username);
 
-            if(user is not null)
+            if (user is not null)
             {
                 ModelState.AddModelError("Username", "Username already exist!");
                 return View();
@@ -83,11 +83,11 @@ namespace Pustok.Controllers
 
             user = await _userManager.FindByEmailAsync(memberRegisterVM.Email);
 
-            if(user is not null )
+            if (user is not null)
             {
-				ModelState.AddModelError("Email", "Email already exist!");
-				return View();
-			}
+                ModelState.AddModelError("Email", "Email already exist!");
+                return View();
+            }
 
             AppUser appUser = new AppUser
             {
@@ -97,15 +97,15 @@ namespace Pustok.Controllers
                 BirthDate = memberRegisterVM.Birthdate,
             };
 
-            var result = await _userManager.CreateAsync(appUser,memberRegisterVM.Password);
+            var result = await _userManager.CreateAsync(appUser, memberRegisterVM.Password);
 
-            if(!result.Succeeded) 
+            if (!result.Succeeded)
             {
                 foreach (var err in result.Errors)
                 {
-					ModelState.AddModelError("", err.Description);
-					return View();
-				}
+                    ModelState.AddModelError("", err.Description);
+                    return View();
+                }
             }
 
             await _userManager.AddToRoleAsync(appUser, "Member");
@@ -117,21 +117,21 @@ namespace Pustok.Controllers
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
-            return RedirectToAction("index","home");
+            return RedirectToAction("index", "home");
         }
 
-        [Authorize(Roles ="Member,Admin, SuperAdmin")]
+        [Authorize(Roles = "Member,Admin, SuperAdmin")]
         public async Task<IActionResult> Profile()
         {
             AppUser appUser = null;
 
-            if(HttpContext.User.Identity.IsAuthenticated)
+            if (HttpContext.User.Identity.IsAuthenticated)
             {
                 appUser = await _userManager.FindByNameAsync(HttpContext.User.Identity.Name);
             }
 
             List<Order> orders = await _pustokContext.Orders
-                                        .Where(x=>x.AppUserId == appUser.Id)
+                                        .Where(x => x.AppUserId == appUser.Id)
                                         .ToListAsync();
 
             return View(orders);
