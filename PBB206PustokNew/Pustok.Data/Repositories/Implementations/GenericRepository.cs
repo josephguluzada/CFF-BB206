@@ -34,7 +34,16 @@ namespace Pustok.Data.Repositories.Implementations
             Table.Remove(entity);
         }
 
-        public async Task<List<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>>? expression = null, params string[]? includes) //{"Authors","BookImages", "BookTags.Tag"}
+		public IQueryable<TEntity> GetAll(Expression<Func<TEntity, bool>>? expression = null, params string[]? includes)
+		{
+            var query = GetQuery(includes);
+
+            return expression is not null 
+                        ? query.Where(expression) 
+                        : query;
+		}
+
+		public async Task<List<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>>? expression = null, params string[]? includes) //{"Authors","BookImages", "BookTags.Tag"}
         {
             var query = GetQuery(includes);
 
@@ -55,7 +64,7 @@ namespace Pustok.Data.Repositories.Implementations
         private IQueryable<TEntity> GetQuery(string[] includes)
         {
             var query = Table.AsQueryable();
-            if (includes is not null)
+            if (includes is not null && includes.Length > 0)
             {
                 foreach (var item in includes)
                 {

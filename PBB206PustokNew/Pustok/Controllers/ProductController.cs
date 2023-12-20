@@ -186,19 +186,19 @@ public class ProductController : Controller
         return Ok(); //200
     }
 
-    public IActionResult GetBasketItems()
-    {
-        List<BasketItemViewModel> basketItemList = new List<BasketItemViewModel>();
+    //public IActionResult GetBasketItems()
+    //{
+    //    List<BasketItemViewModel> basketItemList = new List<BasketItemViewModel>();
 
-        string basketItemListStr = HttpContext.Request.Cookies["BasketItems"];
+    //    string basketItemListStr = HttpContext.Request.Cookies["BasketItems"];
 
-        if (basketItemListStr != null)
-        {
-            basketItemList = JsonConvert.DeserializeObject<List<BasketItemViewModel>>(basketItemListStr);
-        }
+    //    if (basketItemListStr != null)
+    //    {
+    //        basketItemList = JsonConvert.DeserializeObject<List<BasketItemViewModel>>(basketItemListStr);
+    //    }
 
-        return Json(basketItemList);
-    }
+    //    return Json(basketItemList);
+    //}
 
     public async Task<IActionResult> Checkout()
     {

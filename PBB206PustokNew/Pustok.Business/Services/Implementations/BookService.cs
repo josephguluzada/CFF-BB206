@@ -162,12 +162,17 @@ namespace Pustok.Business.Services.Implementations
 
 
 
-        public async Task<List<Book>> GetAllAsync(Expression<Func<Book, bool>>? expression = null)
+        public async Task<List<Book>> GetAllAsync(Expression<Func<Book, bool>>? expression = null, params string[]? includes)
         {
-            return await _bookRepository.GetAllAsync(expression, "BookImages", "Author");
+            return await _bookRepository.GetAllAsync(expression, includes);
         }
 
-        public async Task<List<Book>> GetAllRelatedBooksAsync(Book book)
+		public IQueryable<Book> GetAll(Expression<Func<Book, bool>>? expression = null, params string[]? includes)
+		{
+            return _bookRepository.GetAll(expression, includes);
+		}
+
+		public async Task<List<Book>> GetAllRelatedBooksAsync(Book book)
         {
             return await _bookRepository.GetAllAsync(x => x.GenreId == book.GenreId && !x.IsDeleted && x.Id != book.Id, "Author", "BookImages");
         }
@@ -195,5 +200,10 @@ namespace Pustok.Business.Services.Implementations
         {
             throw new NotImplementedException();
         }
-    }
+
+		public async Task<List<Book>> GetAllFilteredAsync(Expression<Func<Book, bool>>? expression = null, params string[]? includes)
+		{
+			return await _bookRepository.GetAllAsync(expression, includes);
+		}
+	}
 }

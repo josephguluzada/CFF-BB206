@@ -13,6 +13,7 @@ namespace Pustok.Repositories.Interfaces
         void Delete(TEntity entity);
         Task<TEntity> GetByIdAsync(Expression<Func<TEntity, bool>>? expression = null, params string[]? includes);
         Task<List<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>>? expression = null, params string[]? includes);
+        IQueryable<TEntity> GetAll(Expression<Func<TEntity, bool>>? expression = null, params string[]? includes);
 
         Task<int> CommitAsync();
     }

@@ -1,12 +1,13 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Pustok.Business.Hubs;
+using Pustok.Business.Services.Implementations;
+using Pustok.Business.Services.Interfaces;
+using Pustok.Core.Models;
 using Pustok.DAL;
 using Pustok.Data.Repositories.Implementations;
 using Pustok.Repositories.Interfaces;
-using Pustok.Business.Services.Implementations;
-using Pustok.Business.Services.Interfaces;
 using Pustok.ViewServices;
-using Pustok.Core.Models;
-using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -47,6 +48,8 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
 }).AddEntityFrameworkStores<PustokContext>()
   .AddDefaultTokenProviders();
 
+builder.Services.AddSignalR();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -72,5 +75,7 @@ app.MapControllerRoute(
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapHub<ChatHub>("/chatUrl");
 
 app.Run();
